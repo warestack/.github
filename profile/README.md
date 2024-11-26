@@ -1,6 +1,6 @@
 # Warestack
 
-## Manage every code changes wiht best practices!
+## Manage every code changes with best practices!
 
 The developer tool that automates operational tasks triggered by code changes, ensuring your development process consistently adheres to best practices. Think of Warestack as an extra team member, dedicated to keeping you on track by reminding you of crucial tasks and guiding you through essential processes such as pull request reviews, code merges, and other workflow-driven activities. If you choose to skip best practices for any reason, Warestack can help by flagging operations based on your custom rules and best practices. Centralize your workflow operations and enable your team to work more efficiently from one unified space.
 
