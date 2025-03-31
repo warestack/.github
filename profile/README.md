@@ -1,9 +1,8 @@
 # Warestack
 
-## Enforce DevOps best practices
+## Block deployments that break your rules
 
-Warestack is a developer tool that enforces teams to follow best practices across the DevOps lifecycle.
-
+Warestack uses Agentic AI and natural language automation to detect and block risky deployments, enforce protection rules, and align DevOps across version control tools like GitHub and project management tools like Slack and Linear.
 Today's development tools often operate in silos. Skipped reviews, deployment failures, and overlooked issues can still result in Jira tickets being marked as "Done", leading to unpredictable production errors.
 
 Warestack fills these operational gaps by connecting and standardizing steps across the toolchain:
@@ -16,4 +15,4 @@ Like that, Warestack reduces lead times from hours to minutes and ensures consis
 
 ### Getting started for free
 
-Visit [www.warestack.com](https://www.warestack.com) to create your account and enforce best practices today. For detailed instructions on configuring GitHub access, refer to [our documentation](https://www.warestack.com/documentation).
+Visit [www.warestack.com](https://www.warestack.com) to create your account and enforce custom protection rules today. For detailed instructions on how to get started, refer to [our documentation](https://www.warestack.com/documentation).
