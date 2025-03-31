@@ -3,7 +3,8 @@
 ## Block deployments that break your rules
 
 Warestack uses Agentic AI and natural language automation to detect and block risky deployments, enforce protection rules, and align DevOps across version control tools like GitHub and project management tools like Slack and Linear.
-Today's development tools often operate in silos. Skipped reviews, deployment failures, and overlooked issues can still result in Jira tickets being marked as "Done", leading to unpredictable production errors.
+
+Today's development tools often operate in silos. Skipped reviews, deployment failures, and overlooked issues can still result in Linear tickets being marked as "Done", leading to unpredictable production errors.
 
 Warestack fills these operational gaps by connecting and standardizing steps across the toolchain:
 
