@@ -1,6 +1,6 @@
 # Warestack
 
-## Set up custom release protection for each team
+## Set up and trace your custom release protection
 
 Warestack uses Agentic AI and natural language automation to detect and block risky deployments, enforce protection rules, and align DevOps across version control tools like GitHub and project management tools like Slack and Linear.
 
