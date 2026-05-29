@@ -10,7 +10,7 @@
 
 <p align="center">
   <a href="https://github.com/marketplace/warestack">
-    <img src="https://img.shields.io/badge/GitHub%20Marketplace-242%20installations-2ea44f?logo=github&logoColor=white" alt="GitHub Marketplace installations" />
+    <img src="https://img.shields.io/badge/GitHub%20Marketplace-247%20installations-2ea44f?logo=github&logoColor=white" alt="GitHub Marketplace installations" />
   </a>
 </p>
 
