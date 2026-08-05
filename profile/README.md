@@ -17,7 +17,7 @@
 <p align="center">
   <a href="https://github.com/marketplace/warestack">Install on GitHub</a>
   ·
-  <a href="https://calendly.com/dimitris-kargatzis/explore-warestack">Book a demo</a>
+  <a href="https://calendly.com/warestack/intro-call">Book a demo</a>
   ·
   <a href="https://www.warestack.com">warestack.com</a>
 </p>
