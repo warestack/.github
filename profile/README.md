@@ -16,7 +16,7 @@ A pull request can have passing CI, requested changes and an unresolved rule fin
 
 Choose a catalog rule or describe a supported check. Inspect its interpretation, the selected evidence and the scope where it will run. Findings remain tied to the change; incomplete or unavailable evidence is explicit.
 
-For **saved agent-evaluated interpretations**, the console keeps a current version and compares it with a proposed version. Re-interpret proposes changes to the checks; review the diff, then choose Keep current or Adopt. Existing findings keep their recorded interpretation, while later evaluations use the adopted version. Model metadata records which model produced the saved interpretation.
+For **saved agent-evaluated interpretations**, the console keeps a current version and compares it with a proposed version. Re-interpret proposes changes to the checks; review the diff, then choose Keep current or Adopt. Existing findings keep their recorded interpretation, while later evaluations use the adopted version. Where available, model metadata identifies the model that produced the saved interpretation; missing metadata stays unavailable.
 
 [Custom-rule authoring and updates](https://documentation.warestack.com/model-context-protocol) are documented separately from rule evaluation.
 
