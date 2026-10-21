@@ -4,53 +4,70 @@
 
 <h1 align="center">Warestack</h1>
 
-<p align="center">
-  <strong>Engineering delivery governance for GitHub organizations.</strong>
-</p>
-
-<p align="center">
-  <a href="https://github.com/marketplace/warestack">
-    <img src="https://img.shields.io/badge/GitHub%20Marketplace-250+%20installations-2ea44f?logo=github&logoColor=white" alt="GitHub Marketplace installations" />
-  </a>
-</p>
+<p align="center"><strong>Put your engineering standards into practice.</strong></p>
 
 <p align="center">
   <a href="https://github.com/marketplace/warestack">Install on GitHub</a>
-  ·
-  <a href="https://calendly.com/warestack/intro-call">Book a demo</a>
-  ·
-  <a href="https://www.warestack.com">warestack.com</a>
+  · <a href="https://www.warestack.com">Explore the product</a>
+  · <a href="https://documentation.warestack.com/">Documentation</a>
+  · <a href="https://calendly.com/warestack/intro-call">Book a demo</a>
 </p>
 
----
+Release checks still depend on someone remembering them. Follow-ups become manual chasing. Delivery updates mean piecing together pull requests, tickets and deployments.
 
-Engineering leaders use Warestack to define rules that flag, route, or block risky changes across pull requests, reviews, workflows, and deployments — scoped by team, repository, repository group, or subpath.
+Warestack connects **Rules, Chains and Reports** so your team can make agreed standards checkable, coordinate follow-through and inspect the evidence behind delivery answers.
 
+<a href="https://www.warestack.com">
+  <img src="https://raw.githubusercontent.com/warestack/.github/main/profile/media/warestack.png" alt="Warestack dashboard: rule interpretation, configured chain steps and report evidence rows" width="100%" />
+</a>
 
+*Product UI adapted from Warestack's dashboard components. All images use fictional sample data; they are not customer results or unmodified console screenshots.*
 
+## Rules — make standards checkable
 
-PR volume and size are becoming the new bottleneck. Coding tools produces more changes than teams can review. As queues grow, review fatigue increases, Lead Time for Changes gets worse, and teams are pressured to move faster. Static GitHub rules are too rigid, while AI review bots add noise, cost, and unreliable recommendations without enforcing org-wide standards. Risk then moves downstream as incidents, support escalation, lost trust, and customer churn.
+Start with a catalog rule or describe a supported check in plain English. Review its interpretation and named evidence, then enable it for the teams, repositories or paths where it applies. Findings stay tied to the change; unavailable evidence is explicit.
 
-Warestack gives engineering organizations **semantic context, deterministic enforcement, and real-time visibility** across repositories, teams, and workflows — so they know which changes are safe to move forward, which need attention, and where operational risk is accumulating.
+For example, inspect whether a migration change includes rollback notes alongside the relevant PR body and changed path. That checks for the notes, not the safety of a rollback.
 
-### What you can do with Warestack
+## Chains — coordinate follow-through
 
-- Define governance rules for pull requests, reviews, merges, workflows, and deployments.
-- Scope rules by team, repository, repository group, branch, PR type, workflow, deployment context, or subpath.
-- Enforce standards using semantic context, including linked Jira or Linear tickets, branch purpose, PR type, team ownership, and operational impact.
-- Flag, route, or block risky changes with deterministic, auditable rules.
-- Detect rule violations, scope drift, review bottlenecks, and risky changes from a single dashboard.
-- Track engineering KPIs such as review speed, Lead Time for Changes, rule violations, delivery health, and team performance.
-- Notify reviewers and owners in Slack and Linear the moment a rule is triggered.
+Choose what starts a chain, its ordered steps and destinations, and when it stops. Keep a Slack live card current, remind a reviewer until a review arrives, announce a deployment or deliver a saved report.
 
-### How it works
+Review the configuration before enabling. For chains that write to GitHub, run and review a successful dry run of the current definition. Connecting a tool does not enable every action.
+
+## Reports — answer with evidence
+
+Ask delivery questions in plain English, inspect the interpreted query and supporting rows, then save or schedule the report for Slack or email. Export CSV or add an evidence-linked brief when useful. Missing production evidence stays **unknown**.
+
+Analytics adds delivery and review metrics with definitions, period comparisons and repository breakdowns.
+
+| Rules | Chains | Reports |
+| --- | --- | --- |
+| [![Rule interpretation beside a finding and source evidence](https://raw.githubusercontent.com/warestack/.github/main/profile/media/rules.png)](https://www.warestack.com/product/rules) | [![Configured chain trigger, steps, stop condition and message preview](https://raw.githubusercontent.com/warestack/.github/main/profile/media/chains.png)](https://www.warestack.com/product/chains) | [![Delivery report with source rows, deployment links and unknown evidence](https://raw.githubusercontent.com/warestack/.github/main/profile/media/reports.png)](https://www.warestack.com/product/reports) |
+
+## Start with a scope you can inspect
 
 1. Install Warestack and connect your GitHub organization.
-2. Author rules from the dashboard using natural language or structured configuration.
-3. Scope rules by team, repository, branch, PR type, workflow, deployment context, or subpath.
-4. Monitor every PR, review, workflow, and deployment with full traceability and violation history.
-5. Generate reports for delivery reviews, retrospectives, compliance, or leadership visibility.
+2. Select the repositories, standards and evidence you want to start with.
+3. Inspect findings and test configured follow-through before enabling it.
+4. Use Reports to answer a delivery question and open the records behind it.
 
-### Why Warestack
+Rules report findings first. Requiring a Warestack check in GitHub branch protection is a separate, opt-in choice.
 
-Warestack helps engineering teams move faster without treating every PR the same, overloading reviewers, or trusting AI bots with merge decisions.
+## Integrations and availability
+
+**GitHub** supplies change and delivery evidence. **Slack** supports configured follow-up and report delivery. **Linear** connects linked issue context with the delivery workflow. Jira Cloud support is **in progress**; confirm availability and project setup.
+
+[Explore integrations](https://www.warestack.com/integrations) · [Security](https://www.warestack.com/security)
+
+## Pricing
+
+- **Free:** $0, up to five enabled repositories and no usage charges.
+- **Pro — planned:** $49 per space/month plus usage beyond included allowances; no per-seat charge. Confirm availability and terms before purchase.
+- **Enterprise:** agreed usage, retention and support terms.
+
+These are shared Warestack platform plans. [See current pricing and allowances](https://www.warestack.com/pricing).
+
+## Open source
+
+[Watchflow](https://github.com/warestack/watchflow) is our separate open-source project for context-aware GitHub guardrails. Explore its repository for its own features, setup and license.
