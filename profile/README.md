@@ -1,61 +1,60 @@
 # Warestack
 
-Inspect the interpretation, evidence and actions behind engineering delivery.
+Warestack helps engineering teams ship independently while keeping shared standards visible in everyday delivery.
 
-A pull request can have passing CI, requested changes and an unresolved rule finding at the same time. A merged pull request can still have no linked production deployment. Warestack keeps those states visible alongside their source records.
+Your standards already live in repository instructions, review expectations, and work-item requirements. Warestack turns supported standards into checks for pull requests and delivery workflows, showing what was assessed, which evidence was used, and what needs attention.
 
-**Rules** evaluate selected delivery standards. **Chains** run configured follow-up. **Reports** answer questions over the recorded changes and expose the query and rows behind the result.
+[Install on GitHub](https://github.com/marketplace/warestack) · [Documentation](https://documentation.warestack.com/) · [Explore Warestack](https://www.warestack.com)
 
-[Install on GitHub](https://github.com/marketplace/warestack) · [Documentation](https://documentation.warestack.com/) · [Product](https://www.warestack.com)
+## Check the standards your team works by
 
-![Current and proposed versions of a saved agent-evaluated interpretation](https://raw.githubusercontent.com/warestack/.github/main/profile/media/rules-interpretation.png)
+Some expectations are straightforward to validate: a linked issue has an owner, or a change has the required human approvals. Others need context: whether the change matches the linked work, includes meaningful testing evidence, or follows supported repository instructions.
+
+Warestack combines deterministic validators with agentic checks so teams can assess both kinds of expectation.
+
+Use it to:
+
+- Check linked work items, ownership, and workflow state.
+- Assess alignment between a pull request and its linked issue.
+- Check review requirements and supporting evidence.
+- Apply supported written standards within the relevant repository scope.
+- Record findings against the change, with unavailable evidence made explicit.
+
+![Draft rule, source excerpt and evaluation result](https://raw.githubusercontent.com/warestack/.github/main/profile/media/rules-evaluation.png)
 
 *Reconstructed product UI with fictional sample data. The images show selected workflows, not customer results or unmodified production screenshots.*
 
-## Review an interpretation before enabling a check
+## Keep the evidence close to the decision
 
-Choose a catalog rule or describe a supported check. Inspect its interpretation, the selected evidence and the scope where it will run. Findings remain tied to the change; incomplete or unavailable evidence is explicit.
+Review the interpretation of a custom rule before enabling it. Inspect the evidence behind a finding and see what remains unresolved.
 
-For **saved agent-evaluated interpretations**, the console keeps a current version and compares it with a proposed version. Re-interpret proposes changes to the checks; review the diff, then choose Keep current or Adopt. Existing findings keep their recorded interpretation, while later evaluations use the adopted version. Where available, model metadata identifies the model that produced the saved interpretation; missing metadata stays unavailable.
+![Current and proposed versions of a saved agent-evaluated interpretation](https://raw.githubusercontent.com/warestack/.github/main/profile/media/rules-interpretation.png)
 
-[Custom-rule authoring and updates](https://documentation.warestack.com/model-context-protocol) are documented separately from rule evaluation.
-
-For example, a check for rollback notes can inspect the PR body and changed migration path. Its result establishes whether the notes are present. A reviewer still assesses whether the proposed rollback is safe.
-
-![Draft rule, source excerpt and evaluation result](https://raw.githubusercontent.com/warestack/.github/main/profile/media/rules-evaluation.png)
+Start with reporting. Require the Warestack Rules check in GitHub branch protection when you want selected rules to gate merges.
 
 ![One reporting-only finding and its source evidence on GitHub](https://raw.githubusercontent.com/warestack/.github/main/profile/media/github-check.png)
 
 *The sample Warestack finding is reporting-only. Other GitHub checks or branch protection can still prevent merge.*
 
-## Configure what happens next
+## Connect checks with follow-up and reporting
 
-A Chain defines a trigger, conditions, ordered steps, destination and stop condition. Use it to maintain a Slack live card, follow up on a requested review, announce a production deployment or run and deliver a saved report.
+**Rules** assess engineering standards and record findings.
 
-Review the definition and recipients before enabling it. Chains that write to GitHub require a reviewed dry run of the current definition. Execution history records what ran and its outcome.
+**Chains** run configured follow-up, such as maintaining a Slack live card, following up on a review, or delivering a saved report.
 
 ![Chain definition with trigger, steps, destination and stop condition](https://raw.githubusercontent.com/warestack/.github/main/profile/media/chains-review.png)
 
-## Inspect the result and the records behind it
-
-Describe a delivery question, review the interpreted query and preview the supporting rows. Save the report, export CSV, or configure a Chain to run and deliver it. A brief can summarize a report with links to its evidence.
-
-Missing deployment evidence stays **unknown**. Delivery and review metrics retain their definitions, selected period and repository breakdowns where evidence exists.
+**Reports** answer delivery questions and expose the query and supporting records behind the result.
 
 ![Interpreted report question, supporting rows and evidence gaps](https://raw.githubusercontent.com/warestack/.github/main/profile/media/reports-evidence.png)
 
-## Install, inspect, then enable
+GitHub provides change and delivery records. Linear adds linked work-item context. Slack brings configured follow-up into the team's workflow. Jira Cloud support is in progress; confirm availability and project setup.
 
-1. Install the GitHub App and select its repository access.
-2. Choose the rule and reporting scope you want to inspect.
-3. Review interpretations, findings and report rows.
-4. Configure and enable only the Chains you need.
+## Start with a small scope
 
-Installation does not enable every rule or action. Requiring Warestack Rules in GitHub branch protection is a separate, opt-in choice.
+Install the GitHub App, select the repositories, and enable the standards you want to assess. Review the first findings, tune the rules, and choose which follow-up or enforcement to enable.
 
-**GitHub** provides change and delivery records. **Slack** supports configured follow-up and report delivery. **Linear** connects linked issue context. **Jira Cloud** support is in progress; confirm availability and project setup.
-
-[Integration details](https://www.warestack.com/integrations) · [Permissions and data handling](https://www.warestack.com/security) · [Support](https://www.warestack.com/support)
+[Get started](https://documentation.warestack.com/) · [Permissions and data handling](https://www.warestack.com/security) · [Support](https://www.warestack.com/support)
 
 ## Plans
 
@@ -67,4 +66,4 @@ Installation does not enable every rule or action. Requiring Warestack Rules in 
 
 ## Open source
 
-[Watchflow](https://github.com/warestack/watchflow) is Warestack's separate open-source project for context-aware GitHub guardrails. Its repository documents its own features, setup and license.
+[Watchflow](https://github.com/warestack/watchflow) is our separate open-source project for context-aware GitHub guardrails. Its repository documents its features, setup, and license.
